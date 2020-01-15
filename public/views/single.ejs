@@ -1,0 +1,41 @@
+
+<% include ./partials/head %>
+
+<% include ./partials/header %>
+
+<div class="main">
+<div id="single-react-holder"><%-main%></div>
+</div>
+
+
+<% include ./partials/sidebar %>
+
+
+
+
+<script id="data" type="application/json"><%-data%></script>
+<script id="user" type="application/json"><%-user%></script>
+<script id="pageType" type="application/json"><%-pageType%></script>
+<script id="similarCities" type="application/json"><%-similarCities%></script>
+
+<script type="text/javascript">
+
+      var myCallBack = function() {
+
+        
+
+    }
+
+    var addTipRecaptcha = function() {
+      var recaptcha1;
+        recaptcha1 = grecaptcha.render('recaptcha1', {
+          'sitekey' : '6LfeFCITAAAAAMs0b3-ZFfJUNcdgOr_zfb9nnhHr', //Replace this with your Site key
+          'theme' : 'light'
+        });
+    }
+
+</script>
+
+
+ <% include ./partials/footer %>
+</html>
