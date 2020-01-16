@@ -45,17 +45,6 @@ app.use("/public", express.static(process.cwd() + "/public"));
 app.use("/controllers", express.static(process.cwd() + "/app/controllers"));
 app.use("/components", express.static(process.cwd() + "/app/components"));
 
-//SESSION INFO
-/*
-app.use(session({
-	secret: 'nomadAthlete',
-	resave: false,
-	saveUninitialized: true
-}));
-*/
-
-//SESSIONS - ONE DAY
-
 var MongoStore = require("connect-mongo")(session);
 app.use(
   session({
